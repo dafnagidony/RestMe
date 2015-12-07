@@ -1,0 +1,19 @@
+
+
+<div  class="search">
+	<nav-bar></nav-bar>
+	<div class="title_search">
+			Best {{ find }} in {{ address }} <br> 
+			{{ error_msg  }} 
+	</div>
+	<businesses-list></businesses-list>
+	<map-dir></map-dir>
+	<div class="sub_title" >
+		Showing {{display_from}}-{{display_to}} of {{ total }}
+		<br>
+		<uib-pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize"  items-per-page="5" num-pages="numPages" ng-click="func.next()"></uib-pagination>
+	</div> 
+</div>
+	
+
+	

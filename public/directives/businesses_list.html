@@ -1,0 +1,27 @@
+<div class="businesses_list" >
+	<ul class="list">
+		<li class="item" ng-repeat=" business in businesses track by $index" ng-class="{hover: link_hover}" ng-attr-id="{{ 'item-' + $index }}">
+			
+			<a href="" ng-click="func.modalOpen(business.id)" ng-mousemove="link_hover = func.onHover($index)" ng-mouseleave="link_hover=func.onLeave($index)"   >
+				<div class="wrapper">
+					<img  src="{{business.image_url}}" alt="" />
+					<div class="business_name">{{business.name}}</div>
+					 <ul class="stars_list" >
+		         <li class="star" ng-repeat="i in business.yelp_rating_full  track by $index"> 
+		           <i class="fa fa-star"></i>
+		         </li>
+		         <li class="star" ng-repeat="i in business.yelp_rating_part  track by $index"> 
+		           <i class="fa fa-star-half-o"></i>
+		         </li>
+		       </ul>
+
+		       <div class="reviews">{{business.review_count}} Yelp reviews</div>
+		       <div class="categories">
+		       	{{business.categories}}
+		       </div>
+	      </div>
+			</a>
+			
+		</li>
+	</ul>
+</div>

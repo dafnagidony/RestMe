@@ -1,0 +1,492 @@
+.pagination li a {
+  margin-left: 5px;
+  color: #fff;
+  border-radius: 3px;
+  background: #2e2e2e; }
+  .pagination li a:hover {
+    color: #000;
+    text-decoration: none;
+    background: #ebebeb; }
+
+.pagination .disabled a,
+.pagination .disabled a:focus,
+.pagination .disabled a:hover,
+.pagination .disabled span,
+.pagination .disabled span:focus,
+.pagination .disabled span:hover {
+  background-color: #2e2e2e;
+  border: 1px solid #575757; }
+
+.pagination .active a,
+.pagination .active a:focus,
+.pagination .active span,
+.pagination .active a:hover,
+.pagination .active span:focus,
+.pagination .active span:hover {
+  color: #000;
+  background: #ebebeb;
+  border: 1px solid #ebebeb; }
+
+.nav_bar {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  top: 20px; }
+  .nav_bar .logo {
+    font-family: 'Josefin Sans';
+    color: #000;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    background-color: #ebebeb;
+    font-size: 1.7vw;
+    font-weight: 800;
+    border-radius: 70%;
+    padding: 0.6%;
+    text-decoration: none;
+    opacity: 0.9; }
+  .nav_bar img {
+    width: 60px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 3px; }
+  .nav_bar .dropdown {
+    width: 8%;
+    height: 66px;
+    position: absolute;
+    right: 3%;
+    top: 3%; }
+    .nav_bar .dropdown .dropdown-toggle {
+      float: right; }
+    .nav_bar .dropdown .dropdown-menu {
+      right: 3%;
+      left: inherit;
+      font-size: 1.1vw;
+      display: none; }
+      .nav_bar .dropdown .dropdown-menu a {
+        background-color: #fff;
+        width: 70%; }
+      .nav_bar .dropdown .dropdown-menu .hr_line {
+        margin-top: 5px;
+        margin-bottom: 5px; }
+      .nav_bar .dropdown .dropdown-menu .item:hover {
+        position: relative;
+        left: 10px; }
+  .nav_bar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; }
+  .nav_bar .username_name {
+    position: absolute;
+    right: 10%;
+    top: 3%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.3vw;
+    color: #fff; }
+  .nav_bar .sign_in_up {
+    position: absolute;
+    right: 4%;
+    top: 3%; }
+    .nav_bar .sign_in_up .button {
+      display: inline-block;
+      outline: none;
+      font-size: 1.4vw;
+      position: relative;
+      padding: 0.6rem 2rem 0.4rem;
+      height: 3rem;
+      border: none;
+      color: #fff;
+      text-decoration: none;
+      background: none; }
+    .nav_bar .sign_in_up .button:hover {
+      color: #7E7E7E;
+      text-decoration: none; }
+
+.modal {
+  text-align: center; }
+  .modal .facebook, .modal .google {
+    width: 100%;
+    margin-bottom: 10px; }
+  .modal #needAccount {
+    background: none;
+    border: none;
+    color: blue; }
+
+.index-main {
+  position: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/taxi.jpg") no-repeat;
+  width: 100vw;
+  height: 1000px;
+  text-align: center;
+  font-family: 'Josefin Sans';
+  color: #fff; }
+  .index-main .title {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 60%;
+    font-size: 3.5vw;
+    font-weight: 600; }
+  .index-main .search_form {
+    position: absolute;
+    top: 280px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #000;
+    font-size: 1.5vw; }
+    .index-main .search_form #autocomplete {
+      width: 30%; }
+    .index-main .search_form #find {
+      width: 30%; }
+
+.arrow_icon {
+  position: absolute;
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0px;
+  -webkit-animation: arrow_moving 2s infinite;
+  /* Chrome, Safari, Opera */
+  animation: arrow_moving 2s infinite; }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes arrow_moving {
+  from {
+    bottom: 80px;
+    opacity: 0; }
+  to {
+    bottom: 20px;
+    opacity: 0.8; } }
+
+/* Standard syntax */
+@keyframes arrow_moving {
+  from {
+    bottom: 80px;
+    opacity: 0; }
+  to {
+    bottom: 20px;
+    opacity: 0.8; } }
+
+.circle-users {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 650px;
+  padding: 6rem 0 4rem; }
+  .circle-users .sub-title {
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    width: 80%;
+    font-size: 3vw;
+    font-weight: 500;
+    font-style: italic; }
+  .circle-users .list {
+    list-style-type: none;
+    font-size: 0;
+    padding: 0; }
+  .circle-users .item {
+    display: inline-block;
+    width: 33.33%;
+    padding: 5% 5%;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .circle-users .item_img {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 100%; }
+    .circle-users .item_img img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+    .circle-users .item_img:hover .detailed {
+      opacity: 1.0; }
+  .circle-users .detailed {
+    -webkit-transition: all 250ms ease-in-out 0s;
+    -moz-transition: all 250ms ease-in-out 0s;
+    -o-transition: all 250ms ease-in-out 0s;
+    transition: all 250ms ease-in-out 0s;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    border-radius: 100%;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.6); }
+    .circle-users .detailed .content {
+      position: absolute;
+      display: table;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      text-align: center;
+      width: 75%;
+      color: #fff;
+      line-height: 200%;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      font-family: 'Josefin Sans';
+      font-size: 1.5vw; }
+    .circle-users .detailed .read_button {
+      text-decoration: none;
+      font-size: 1.5vw;
+      border: none;
+      padding: 0.8rem 1.3rem 0.8rem;
+      height: 3rem;
+      color: #fff;
+      border-radius: 3px;
+      background: #2e2e2e; }
+      .circle-users .detailed .read_button:hover {
+        color: #000;
+        text-decoration: none;
+        background: #ebebeb; }
+
+.user-main, .search {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/taxi.jpg") no-repeat;
+  width: 100vw;
+  height: 1000px;
+  text-align: center;
+  font-family: 'Josefin Sans';
+  color: #fff; }
+  .user-main .title, .search .title {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 40%;
+    font-size: 4vw;
+    font-weight: 500; }
+  .user-main .title_search, .search .title_search {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%;
+    font-size: 3vw;
+    font-weight: 500; }
+  .user-main .sub_title, .search .sub_title {
+    font-size: 1.2vw;
+    position: absolute;
+    top: 820px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 5%; }
+  .user-main .map-div, .search .map-div {
+    position: absolute;
+    top: 200px;
+    right: 5%;
+    width: 40%;
+    height: 575px; }
+    .user-main .map-div ng-map, .search .map-div ng-map {
+      width: 100%;
+      height: 100% !important;
+      color: #000; }
+    .user-main .map-div .info-window, .search .map-div .info-window {
+      text-align: left;
+      vertical-align: top;
+      padding-top: 1rem;
+      font-family: 'Josefin Sans';
+      color: #000; }
+      .user-main .map-div .info-window .info, .search .map-div .info-window .info {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 1rem;
+        font-size: 1.2vw; }
+        .user-main .map-div .info-window .info .info-title, .search .map-div .info-window .info .info-title {
+          position: relative;
+          font-size: 1.4vw;
+          font-weight: bold;
+          padding-right: 1rem; }
+      .user-main .map-div .info-window img, .search .map-div .info-window img {
+        position: relative;
+        display: inline-block;
+        height: 88px;
+        padding-right: 1rem; }
+  .user-main .businesses_list, .search .businesses_list {
+    width: 45%;
+    position: absolute;
+    left: 5%;
+    top: 200px; }
+    .user-main .businesses_list .list, .search .businesses_list .list {
+      list-style-type: none;
+      font-size: 0;
+      padding: 0; }
+    .user-main .businesses_list .item, .search .businesses_list .item {
+      display: inline-block;
+      position: relative;
+      height: 100px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+      font-size: 1.5vw;
+      color: #fff;
+      background: rgba(122, 122, 122, 0.7);
+      border-radius: 3px; }
+      .user-main .businesses_list .item a, .search .businesses_list .item a {
+        outline: none;
+        text-decoration: none;
+        color: #fff;
+        width: 100%;
+        height: 100%; }
+        .user-main .businesses_list .item a .wrapper, .search .businesses_list .item a .wrapper {
+          width: 100%;
+          height: 100%;
+          padding: 3.5% 3.5%; }
+          .user-main .businesses_list .item a .wrapper .stars_list, .search .businesses_list .item a .wrapper .stars_list {
+            display: inline-block;
+            float: left;
+            padding-top: 1%;
+            padding-left: 0;
+            width: 26%; }
+            .user-main .businesses_list .item a .wrapper .stars_list .star, .search .businesses_list .item a .wrapper .stars_list .star {
+              display: inline-block;
+              padding-right: 4%;
+              float: left; }
+          .user-main .businesses_list .item a .wrapper img, .search .businesses_list .item a .wrapper img {
+            width: 17%;
+            border-radius: 3px;
+            float: left;
+            padding-right: 4.5%; }
+          .user-main .businesses_list .item a .wrapper .business_name, .search .businesses_list .item a .wrapper .business_name {
+            float: left;
+            width: 55%;
+            font-weight: 500;
+            font-size: 1.7vw; }
+          .user-main .businesses_list .item a .wrapper .categories, .search .businesses_list .item a .wrapper .categories {
+            position: absolute;
+            left: 20%;
+            top: 60%;
+            font-weight: 500;
+            font-size: 1.1vw;
+            width: 34%; }
+          .user-main .businesses_list .item a .wrapper .reviews, .search .businesses_list .item a .wrapper .reviews {
+            font-size: 1.1vw;
+            position: absolute;
+            top: 60%;
+            left: 70%; }
+    .user-main .businesses_list .hover, .search .businesses_list .hover {
+      background: rgba(160, 160, 160, 0.7); }
+
+.modalWindow {
+  height: 550px;
+  background: linear-gradient(rgba(81, 81, 81, 0.9), rgba(81, 81, 81, 0.9)), url("../images/bar.jpg") no-repeat; }
+  .modalWindow .titleLine {
+    position: absolute;
+    top: 4%;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: auto;
+    text-align: center; }
+    .modalWindow .titleLine .title {
+      position: relative;
+      display: inline-block;
+      font-size: 2.3vw;
+      color: #fff;
+      font-weight: bold;
+      font-family: 'Josefin Sans'; }
+    .modalWindow .titleLine img {
+      position: relative;
+      display: inline-block;
+      width: 75px;
+      float: left; }
+    .modalWindow .titleLine .stars_list {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      padding-left: 5%;
+      font-size: 1.5vw;
+      width: 30%;
+      color: #fff; }
+      .modalWindow .titleLine .stars_list .star {
+        display: inline-block;
+        padding-right: 4%;
+        float: center; }
+  .modalWindow .closeBtn {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    text-decoration: none;
+    font-size: 2vw;
+    color: #a1a1a1; }
+  .modalWindow .userReview {
+    position: absolute;
+    left: 10%;
+    top: 21%;
+    width: 80%;
+    font-style: italic;
+    color: #616161;
+    background-color: #dcdcdc; }
+  .modalWindow .left-arrow {
+    position: absolute;
+    left: 1%;
+    top: 42%;
+    font-size: 5vw;
+    color: #a1a1a1; }
+  .modalWindow .right-arrow {
+    position: absolute;
+    right: 1%;
+    top: 42%;
+    font-size: 5vw;
+    color: #a1a1a1; }
+  .modalWindow .hover {
+    color: #fff; }
+
+.modalWindow-search {
+  height: 250px;
+  background: #d5d5d5;
+  font-family: 'Josefin Sans';
+  font-size: 1.2vw; }
+  .modalWindow-search .titleLine {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    right: 0;
+    width: 85%;
+    margin: auto;
+    text-align: center; }
+    .modalWindow-search .titleLine .title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 30%;
+      font-size: 1.3vw;
+      font-weight: bold;
+      width: 60%; }
+    .modalWindow-search .titleLine img {
+      position: relative;
+      display: inline-block;
+      width: 55px;
+      float: left; }
+  .modalWindow-search .closeBtn {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    text-decoration: none;
+    font-size: 1vw;
+    color: #a1a1a1; }
+  .modalWindow-search .details {
+    position: absolute;
+    top: 33%;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: auto;
+    text-align: center; }
+  .modalWindow-search .hover {
+    color: #fff; }

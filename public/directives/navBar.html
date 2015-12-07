@@ -1,0 +1,23 @@
+<div class="nav_bar">
+  <a href="/" class="logo">Rest Me</a>
+  <div ng-if="display_profile">
+ 		<div class="username_name">Hello {{ user_name}} </div>
+ 		<div class="dropdown">
+    	<a href="" class="dropdown-toggle" data-toggle="dropdown"><img  src="{{ user_image }}" alt="" />
+    	</a>
+    	<ul class="dropdown-menu">
+    		<li ><a  class="item">User Profile</a></li>
+    		<hr class="hr_line">  
+      	<li ><a class="item" href="/logout?url={{url}}">Logout</a></li>   	     	
+    	</ul>
+  	</div>
+  </div>	
+ <div ng-if="!display_profile">
+  	<div class="sign_in_up">
+			<button  class="button" ng-click="send_url()" data-toggle="modal" data-target="#sighinModal">
+				Log In	
+			</button>
+			<button  class="button" ng-click="send_url()" data-toggle="modal" data-target="#sighupModal">Sign Up</button>
+		</div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+<div >
+<div id="sighinModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+      	<a href="/auth/facebook"  class="btn btn-primary facebook"><span class="fa fa-facebook"></span> Facebook</a>
+      	<a href="/auth/google" class="btn btn-danger google"><span class="fa fa-google-plus"></span> Google</a>
+      	<hr> 
+      	<!-- LOGIN FORM -->
+      
+          <div  class="alert alert-danger" id="signin_message"></div>
+     
+      
+    		<form action="/login" method="post" >
+        	<div class="form-group">
+            
+            <input type="text" class="form-control" name="email" placeholder="Email Address" required onclick="close_error()">
+        	</div>
+        	<div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required onclick="close_error()">
+        	</div>
+        	<button type="submit" class="btn btn-warning btn-lg">Log In</button>
+    		</form>
+    		<hr>
+    		<p>Need an account? <button id="needAccount" data-dismiss="modal" onclick="$('#sighupModal').modal('show');">Sign Up</button></p>
+        
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div id="sighupModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <!-- Modal content-->
+    <div class="modal-content">
+      
+      <div class="modal-body">
+        
+        <a href="/auth/facebook" class="btn btn-primary facebook"><span class="fa fa-facebook"></span> Facebook</a>
+        <a href="/auth/google" class="btn btn-danger google"><span class="fa fa-google-plus"></span> Google</a>
+        <hr> 
+          <div class="alert alert-danger" id="signup_message"></div>
+
+        <!-- LOGIN FORM -->
+        <form action="/signup" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="username" placeholder="Select User Name" required required onclick="close_error()">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="email" placeholder="Email Address" required required onclick="close_error()">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password" required required onclick="close_error()">
+            </div>
+
+            <button type="submit" class="btn btn-warning btn-lg">Sign Up</button>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+

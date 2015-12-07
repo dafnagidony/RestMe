@@ -1,0 +1,13 @@
+<div>
+	<div class="map-div" >
+		<ng-map  >
+			<marker ng-repeat=" pos in positions track by $index" position="{{pos.lat}},{{pos.lng}}" on-click="markerClick($index)" animation="{{pos.animation}}" optimized="false" icon='http://www.google.com/mapfiles/marker.png?i={{$index}}' on-mouseover="markerhover($index)" on-mouseout="markerleave($index)" ></marker>
+		</ng-map>
+	</div>	
+	<div class="sub_title" >
+		Showing {{display_from}}-{{display_to}} of {{ total }}
+		<br>
+		<uib-pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize"  items-per-page="5" num-pages="numPages" ng-click="func.next()"></uib-pagination>
+		
+	</div> 
+</div>

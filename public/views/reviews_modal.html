@@ -1,0 +1,42 @@
+<div class="modalWindow">
+	<div class="titleLine">
+		<img  src="{{business.image_url}}" alt="" />
+		<h3 class="title"> {{business.name}}</h3>
+
+		<ul class="stars_list" >
+	     <li class="star" ng-repeat="i in business.yelp_rating_full  track by $index"> 
+	       <i class="fa fa-star"></i>
+	     </li>
+	     <li class="star" ng-repeat="i in business.yelp_rating_part  track by $index"> 
+	       <i class="fa fa-star-half-o"></i>
+	     </li>
+	   </ul>
+	</div>
+	<div class="userReview well">
+		{{user.name}}'s review:
+		</br>
+		<div ng-repeat=" review in business.user_review track by $index">{{review}}</div>
+	</div>
+	
+		<a
+    	ng-class="{hover: lefthover}" 
+    	ng-mouseover="lefthover = (business.id == 0 ? false : true)"
+    	ng-mouseleave="lefthover = false" 
+			class="left-arrow" href="" ng-click="prev()">
+			<i class="fa fa-caret-left"></i>
+		</a>
+	
+	<a 
+		ng-class="{hover: righthover}" 
+    ng-mouseover="righthover = (business.id == max_businesses_id ? false : true)"
+    ng-mouseleave="righthover = false"
+		class="right-arrow" href="" ng-click="next()">
+		<i class="fa fa-caret-right"></i>
+	</a>
+	<a 
+	ng-class="{hover: closehover}" 
+  ng-mouseenter="closehover = true"
+  ng-mouseleave="closehover = false"
+	class="closeBtn" href="" ng-click="cancel()"><i class="fa fa-times"></i></a>
+</div>
+

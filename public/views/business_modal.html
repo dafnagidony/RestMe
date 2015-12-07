@@ -1,0 +1,22 @@
+<div class="modalWindow-search">
+	<div class="titleLine">
+		<img  src="{{business.image_url}}" alt="" />
+		<h3 class="title"> {{business.name}}</h3>
+	</div>
+	<div class="details">
+		<div class="info-neighborhood">{{business.categories}}</div>
+		<div class="info-address">{{business.address}} {{business.city}} {{business.state}}</div>
+		<div class="info-phone">{{business.display_phone}}</div>
+	</br>
+		<a href="{{business.url}}" class="info-url">{{business.url}}</a>
+	</div>
+	
+		
+	<a 
+	ng-class="{hover: closehover}" 
+  ng-mouseenter="closehover = true"
+  ng-mouseleave="closehover = false"
+	class="closeBtn" href="" ng-click="cancel()"><i class="fa fa-times"></i>
+	</a>
+</div>
+
